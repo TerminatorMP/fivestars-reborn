@@ -1,5 +1,6 @@
 import { Typography, Box, Accordion, AccordionSummary, AccordionDetails, Divider } from "@mui/material"
 import { Container } from "@mui/system"
+import Head from "next/head"
 import InConstruction from "../../../src/components/InConstruction"
 import Navbar from "../../../src/components/nav/Navbar"
 import IconExpand from "../../../src/icon/IconExpand"
@@ -25,6 +26,11 @@ const Route = ({label, url}) => {
 export default function Site() {
   return(
     <>
+      <Head>
+        <title>FiveStars Reborn</title>
+        <meta name="description" content="Farm Routen" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <Container maxWidth="md" sx={{paddingBottom:"2rem"}}>
 

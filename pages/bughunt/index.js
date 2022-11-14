@@ -1,5 +1,6 @@
 import { Table, Typography, TableContainer, Paper, TableHead, TableBody, TableRow, TableCell } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import Head from "next/head";
 import Navbar from "../../src/components/nav/Navbar";
 import Heading from "../../src/components/Heading";
 import IconAttention from "../../src/icon/IconAttention";
@@ -8,6 +9,11 @@ import IconAttention from "../../src/icon/IconAttention";
 export default function Index({rows}) {
   return (
     <div>
+      <Head>
+        <title>FiveStars Reborn</title>
+        <meta name="description" content="Finde Bugs und werde belohnt" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <main>
         <Container maxWidth="md">
@@ -24,12 +30,10 @@ export default function Index({rows}) {
             </Typography>
             <Typography variant="body1" sx={{ mt: 2 }}>
               Dann melde ihn uns. Wir werden uns dann umgehend darum kümmern.
+              <br/><br/>
+              Gehe einfach in den Discord und erstelle ein Ticket in dem Channel <b>#ticket-erstellen</b>.
               <br/>
-              <p>
-                Gehe einfach in den Discord und erstelle ein Ticket in dem Channel <b>#bug-report</b>.
-              <br/>
-                Gib uns eine kurze Beschreibung und wann / wo der Bug auftritt.
-              </p>
+              Gib uns eine kurze Beschreibung und wann / wo der Bug auftritt.
             </Typography>
 
             <Typography variant="h4" sx={{ mt: 8, mb: 2 }}>

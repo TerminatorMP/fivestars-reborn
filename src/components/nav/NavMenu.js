@@ -48,6 +48,8 @@ export default function NavMenu() {
           textTransform: 'none',
           fontWeight: 700,
           fontSize: "1.3rem",
+          lineHeight: 1,
+          padding: 0,
           color: "background.default",
           '&:hover': {
             color: "primary.main",
