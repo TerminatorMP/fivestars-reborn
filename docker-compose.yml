@@ -7,4 +7,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - /home/fivem/ssl:ssl
+      - /home/fivem/ssl:/etc/ssl
