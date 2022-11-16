@@ -19,20 +19,29 @@ export default function Hero() {
       position: "relative",
     }}>
       <Image src="/hero_img.webp" alt="FiveStars Reborn" layout="fill" />
-      <Button variant="outlined" sx={{
+      <Box component="div" sx={{
         position: "absolute",
-        top: "90%",
+        top:"50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        fontSize: "1.8rem",
-        padding: "1rem 3rem",
-        textTransform: "none",
-      }}
-      onClick={handleJoin}
-      endIcon={<IconDiscord style={{marginLeft:"0.5rem", width:'2rem', height: '2rem'}} />}
-      >
-        Discord
-      </Button>
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "60%"
+      }}>
+        <Image src="/hero_heading.png" alt="FiveStars Reborn" width="800px" height="300px" />
+        <Button variant="outlined" sx={{
+          display: "inline-box",
+          fontSize: "1.6rem",
+          padding: "1rem 2rem",
+          textTransform: "none",
+        }}
+                onClick={handleJoin}
+                endIcon={<IconDiscord style={{marginLeft:"0.5rem", width:'2rem', height: '2rem'}} />}
+        >
+          Discord
+        </Button>
+      </Box>
       <a style={{display: "none"}} ref={linkRef} href="https://discord.gg/gGHxxWV3yG" rel="noreferrer" target="_blank" />
     </Box>
   )
