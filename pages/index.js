@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../src/components/nav/Navbar';
 import Hero from '../src/components/Hero';
+import Trailer from '../src/components/Trailer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar position="fixed"/>
       <main>
         <Hero />
+        <Trailer />
       </main>
       
     </div>

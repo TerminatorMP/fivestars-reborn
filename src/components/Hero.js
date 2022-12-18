@@ -3,6 +3,7 @@ import { Box } from "@mui/system"
 import IconDiscord from "../icon/IconDiscord"
 import { useRef } from "react"
 import Image from "next/image"
+import ArrowBounce from "./ArraowBounce/ArrowBounce"
 
 
 export default function Hero() {
@@ -35,12 +36,22 @@ export default function Hero() {
           fontSize: "1.6rem",
           padding: "1rem 2rem",
           textTransform: "none",
+          border: "solid 1px",
+          marginLeft: "-10px",
         }}
                 onClick={handleJoin}
                 endIcon={<IconDiscord style={{marginLeft:"0.5rem", width:'2rem', height: '2rem'}} />}
         >
           Discord
         </Button>
+      </Box>
+      <Box sx={{
+        position: "absolute",
+        bottom: "10px",
+        left: "50%",
+        transform: "translateX(-50%)",
+      }}>
+        <ArrowBounce />
       </Box>
       <a style={{display: "none"}} ref={linkRef} href="https://discord.gg/gGHxxWV3yG" rel="noreferrer" target="_blank" />
     </Box>
