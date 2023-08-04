@@ -53,7 +53,7 @@ export default function Hero() {
       }}>
         <ArrowBounce />
       </Box>
-      <a style={{display: "none"}} ref={linkRef} href="https://discord.gg/gGHxxWV3yG" rel="noreferrer" target="_blank" />
+      <a style={{display: "none"}} ref={linkRef} href="https://discord.gg/BPNM2sBzxy" rel="noreferrer" target="_blank" />
     </Box>
   )
 }
